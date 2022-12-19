@@ -28,7 +28,9 @@
     {%set fruits=['사과','배','오렌지']%}
     <table border="1">
       <tr>
+        <!-- 어떤 배열에서 가져올건지 -->
         {%for item in fruits %}
+        <!-- 1부터 시작하고싶다 loop.index -->
         <td>{{loop.index}}.{{item}}</td>
         {%endfor%}
       </tr>

@@ -6,7 +6,9 @@ const app = express();
 
 app.set("port", process.env.PORT || 8888);
 
+//루트로 요청하면 인덱스라우터로 요청을 보낼거
 app.use("/", indexRouter);
+// 유저로 요청하면 유저 라우터로 요청 보낼거
 app.use("/user", userRouter);
 
 app.listen(app.get("port"), () => {
